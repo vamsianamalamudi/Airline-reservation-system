@@ -1,0 +1,20 @@
+			Airline Reservation System Table script
+
+
+
+
+
+Create table BookingInformation(Booking_id varchar2(5), cust_email Varchar2(50),cust_name varchar2(30),no_of_passengers number(4), class_type varchar2(20), total_fare number(10,2), CreditCard_info varchar2(16), src_city varchar2(10), dest_city varchar2(10),flightno varchar2(5));
+
+create table customer(firstname varchar2(20), lastname varchar2(20),username varchar2(20), email varchar2(40),mobile_no number(10));
+
+
+Create table FlightInformation (flightno varchar2(5), airline varchar2(10),dep_city varchar2(10), arr_city varchar2(10), dep_date date, arr_date date, dep_time varchar(30) , arr_time varchar(30) , FirstSeats number(4), FirstSeatFare number(10,2), BussSeats number(4), BussSeatsFare number(10,2));
+
+
+Insert into FlightInformation Values ('6e142’,’Indigo’,’bangalore’,’Delhi’,’12-DEC-2016’, ’13-DEC-2016’,’18:00’, ’21:00’,6,1000,8,20000);
+
+
+Create table Users (username varchar2(20), password varchar2(20), role varchar2(20), mobile_no number(10));
+
+create sequence booking_id_seq start with 10000;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+ input[type="text"], input[type="password"] {
+    width: 75%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+	 input[type="user_name"], input[type="password"] {
+    width: 75%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+input[type="Submit"] {
+	text-color:red;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+div{width:400px;
+margin-left:440px;
+} 
+     
+
+body {
+    background-image: url("https://www.desktopbackground.org/p/2015/05/26/954079_aeroplane-hd-wallpapers-hd-wallpaper-backgrounds-of-your-choice_2560x1600_h.jpg");
+    background-color: #cccccc;
+      /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+</style>
+<body background="C:\Users\Vamsi\Desktop\miniproject\src\webpictures\bg.jpg" width=100px height=200px>
+<H1><marquee><font color="white"> AIRLINE RESERVATION</font></marquee></H1>
+<h2 style="color:white; font-family: GrutchShaded; text-align:center;">Sign Up</h2>
+<body style="text-align:center">
+	<form action="dum.php" method ="Post">
+	
+	<center>
+		<table align="center">
+		<tr>
+			<th><font color="white">Passport No : </font> </th>
+			<td><input type="text" name="passport_no" maxlength="10" /></td>
+        </tr>
+        
+		<tr>
+			<th><font color="white">First Name : </font></th>
+			<td><input type="text" name="first_Name" maxlength="20"   /></td>
+		</tr>
+		
+		<tr>
+			<th><font color="white">Last Name : </font> </th>
+			<td><input type="text" name="last_Name" maxlength="20"  /></td>
+		</tr>
+		
+		<tr>
+			<th><font color="white">Email :  </font></th>
+			<td><input type="email" name="user_name" title="Format : abc@xyz"  /></td>
+		</tr>
+		
+		<tr>
+			<th><font color="white">Password :  </font></th>
+			<td><input type="password" name="password" maxlength="20" /></td>
+		</tr>
+		
+		
+		
+		<tr>
+			<td></td>
+			<td>
+				<input type="submit" name="btn-login" value="Next" required />
+				<input type="reset" value="Reset" required />
+			</td>
+		</tr>
+		
+	</table>
+	</center>
+	
+	
+		<a href="passengerLogin.html">Already a user?</a>
+	
+	
+	</form>
+	
+	?>
+
+</body>
+</html>

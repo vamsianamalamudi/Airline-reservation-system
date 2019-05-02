@@ -1,0 +1,5 @@
+CREATE TABLE `ars2`.`user_details` ( `passport_no` INT(10) NOT NULL AUTO_INCREMENT , `first_name` VARCHAR(20) NOT NULL , `last_name` VARCHAR(20) NOT NULL , `user_name` VARCHAR(40) NOT NULL , `password` VARCHAR(20) NOT NULL , PRIMARY KEY (`passport_no`)) ENGINE = InnoDB;
+
+CREATE TABLE `ars2`.`booking_table` ( `user_id` INT(4) NOT NULL , `trans_id` INT(4) NOT NULL , `booking_date` DATE NOT NULL , `departure_date` DATE NOT NULL , `reporting_time` TIME NOT NULL , `from` VARCHAR(20) NOT NULL , `to` VARCHAR(20) NOT NULL , `booking_id` INT(4) NOT NULL , PRIMARY KEY (`booking_id`)) ENGINE = InnoDB;
+
+
